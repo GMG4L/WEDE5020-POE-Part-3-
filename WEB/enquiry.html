@@ -58,9 +58,9 @@
             <input type="submit" value="Submit">
         </form>
     </div>
-
+    <div>
+    <form action="staffForm"> <!-- Form submission URL -->
     <h1>To become a member of staff</h1> <!-- Staff sign-up form title -->
-
     <!-- Staff form fields -->
     <label>First name:</label>
     <input type="text" required />  <!-- Required first name -->
@@ -83,13 +83,65 @@
     </select>
 
     <!-- Submit button for staff form -->
-    <input type="submit"/><p> <!-- Submit and paragraph break -->
-
+    <input type="submit" value="submit"/><p> <!-- Submit and paragraph break -->
+    </div>
+        <script>
+            // Enquiry form submission
+            document.querySelector("form[action='/action_page.php']").addEventListener("submit", function(event) {
+                event.preventDefault(); // Prevent form submission
+        
+                const fname = document.getElementById("fname").value.trim();
+                const lname = document.getElementById("lname").value.trim();
+                const email = document.getElementById("Email").value.trim();
+                const enquiry = document.querySelector("input[placeholder='Enquiry']").value.trim();
+        
+                if (!fname || !lname || !email || !enquiry) {
+                    alert("Please fill in all the enquiry form fields.");
+                    return;
+                }
+        
+                // Basic email format check
+                const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+                if (!emailPattern.test(email)) {
+                    alert("Please enter a valid email address.");
+                    return;
+                }
+        
+                alert("Thank you " + fname + "! Your enquiry has been received.");
+                this.reset(); // Clear form fields
+            });
+        
+            // Staff form submission
+            document.getElementById("staffForm").addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevent form submission
+        
+                const fname = document.getElementById("staffFname").value.trim();
+                const lname = document.getElementById("staffLname").value.trim();
+                const phone = document.getElementById("staffPhone").value.trim();
+                const idNumber = document.getElementById("staffID").value.trim();
+        
+                if (!fname || !lname || !phone || !idNumber) {
+                    alert("Please fill in all the staff application fields.");
+                    return;
+                }
+        
+                if (idNumber.length < 6) {
+                    alert("Please enter a valid ID number.");
+                    return;
+                }
+        
+                alert("Thank you " + fname + "! Your application has been submitted.");
+                this.reset(); // Clear form fields
+            });
+        </script>
+        
+        
+        
     </body> <!-- Closes extra body tag -->
 
     <button class="button button2">Next Page</button> <!-- Button to go to the next page -->
 
     <footer> <!-- Footer section -->
-        <p>&copy[2019][LK's laundry hub][All rights reserved. Term of service privacy </p> <!-- Footer text (missing closing punctuation) -->
+        <p>&copy[2026][LK's laundry hub][All rights reserved. Term of service privacy </p> <!-- Footer text (missing closing punctuation) -->
     </footer>
 

@@ -270,4 +270,28 @@ div {
 }
   main{
     padding:1rem,/*smaller padding for main content on small screens*/
+  }  main{
+    padding:1rem,/*smaller padding for main content on small screens*/
   }
+  /* Make page elements stretch full width */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Ensure your image row and flex container use full width */
+.image-row,
+.flex-container,
+.float-section,
+ul {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Optional: stretch images in .image-row */
+.image-row img {
+  max-width: 100%;
+  height: auto;
+}

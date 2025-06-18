@@ -103,8 +103,52 @@
   <button class="button button2">Next Page</button> <!-- Button to go to next page -->
 
   <footer> <!-- Footer section -->
-    <p>&copy[2019][LK's laundry hub][All rights reserved for term of service privacy </p> <!-- Footer text -->
+    <p>&copy[2026][LK's laundry hub][All rights reserved for term of service privacy </p> <!-- Footer text -->
   </footer>
+  <script>
+  // Hover effect on image-row images
+    document.addEventListener("DOMContentLoaded", function () {
+      const images = document.querySelectorAll(".image-row img");
+      images.forEach(img => {
+        img.addEventListener("mouseover", () => {
+          img.style.border = "3px solid #00bcd4";
+          img.style.transform = "scale(1.05)";
+          img.style.transition = "all 0.3s";
+        });
+        img.addEventListener("mouseout", () => {
+          img.style.border = "none";
+          img.style.transform = "scale(1)";
+        });
+      });
+  
+      // Toggle Goals Section
+      const goalSection = document.querySelector('.clearfix h3');
+      if (Goals) {
+        const toggleBtn = document.createElement('button');
+        toggleBtn.innerText = "Show/Hide Goals";
+        toggleBtn.style.marginTop = "10px";
+        toggleBtn.className = "button button2";
+  
+        const goalsDiv = goalSection.parentElement;
+        goalsDiv.insertBefore(toggleBtn, goalSection);
+        goalSection.style.display = "none";
+  
+        toggleBtn.addEventListener("click", () => {
+          goalSection.style.display = goalSection.style.display === "none" ? "block" : "none";
+        });
+      }
+  
+      // Next Page Button
+      const nextBtn = document.querySelector(".button.button2");
+      if (nextBtn) {
+        nextBtn.addEventListener("click", function (serviceshtml) {
+          alert("Redirecting to next page (e.g., services.html)");
+          // Uncomment below to actually redirect:
+          // window.location.href = "service.html";
+        });
+      }
+    });
+  </script>
 </body>
 </html>
 

@@ -1,0 +1,95 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> <!-- Character encoding declaration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile scaling -->
+    <title>Services</title> <!-- Title of the web page -->
+    <link rel="stylesheet" href="Style.css"> <!-- Link to external CSS stylesheet -->
+</head>
+
+<body> <!-- Beginning of the webpage body -->
+
+    <ul> <!-- Navigation bar with list items -->
+        <li>
+            <!-- Logo image for the website -->
+            <img src="../IMG/LK laundry.PNG" alt="Laundry Hub Logo" class="logo">
+        </li>
+        <!-- Navigation menu items -->
+        <li><h3><a href="index.html">Homepage</a></h3></li>
+        <li><h3><a href="about.html">About Us</a></h3></li>
+        <li><h3><a href="service.html">Services</a></h3></li>
+        <li><h3><a href="enquiry.html">Enquiry</a></h3></li>
+        <li><h3><a href="contact.html">Contact</a></h3></li>
+        <li style="float:right"><h3><a class="active" href="contact.html">Contact Us</a></h3></li> <!-- Right-aligned contact button -->
+    </ul>
+
+        <h1>LK's Laundry Enquiry Page</h1> <!-- Page title -->
+
+    <!-- Image row at the top -->
+    <div class="image-row">
+        <img src="../IMG/South African emblem.jpg" alt="South African Emblem"> <!-- Image 1 -->
+        <img src="../IMG/LK laundry.PNG" alt="Laundry Hub Logo"> <!-- Image 2 -->
+        <img src="../IMG/south-african-flag-1486137288VYk.jpg" alt="South African Flag"> <!-- Image 3 -->
+    </div>
+ 
+
+    <h1>To enquire our business, enter your details</h1><br> <!-- Enquiry form header -->
+
+    <div> <!-- Container for form -->
+        <form action="/action_page.php"> <!-- Form submission URL -->
+
+            <!-- First name input field -->
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <!-- Last name input field -->
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <!-- Email input field -->
+            <label for="lname">Your Email</label>
+            <input type="text" id="Email" name="Email" placeholder="Your Email..">
+
+            <!-- Enquiry message input field -->
+            <label>Type your enquiry here:</label>
+            <input type="text" placeholder="Enquiry"/><br/>
+
+            <!-- Submit button for the enquiry form -->
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <h1>To become a member of staff</h1> <!-- Staff sign-up form title -->
+
+    <!-- Staff form fields -->
+    <label>First name:</label>
+    <input type="text" required />  <!-- Required first name -->
+    <label>Last name:</label>
+    <input type="text" required /><br><br> <!-- Required last name -->
+
+    <label>Your Number:</label>
+    <input type="text" required /> <!-- Required contact number -->
+
+    <!-- ID input -->
+    <label for="lname">ID Number</label>
+    <input type="number" id="Enter lD Number" name="ID" placeholder="Your ID Number.."><br><br>
+
+    <!-- Nationality selection dropdown -->
+    <label for="country">Your nationality</label>
+    <select id="country" name="country">
+        <option value="South Africa">South Africa</option>
+        <option value="australia">Australia</option>
+        <option value="usa">USA</option>
+    </select>
+
+    <!-- Submit button for staff form -->
+    <input type="submit"/><p> <!-- Submit and paragraph break -->
+
+    </body> <!-- Closes extra body tag -->
+
+    <button class="button button2">Next Page</button> <!-- Button to go to the next page -->
+
+    <footer> <!-- Footer section -->
+        <p>&copy[2019][LK's laundry hub][All rights reserved. Term of service privacy </p> <!-- Footer text (missing closing punctuation) -->
+    </footer>
+

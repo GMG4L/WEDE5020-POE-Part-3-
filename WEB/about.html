@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive scaling on different devices -->
+    <title>About</title> <!-- Title of the web page -->
+    <link rel="stylesheet" href="Style.css"> <!--Link to the CSS file-->
+</head>
+
+<body> <!-- Start of the body section -->
+
+    <ul> <!-- Navigation bar list -->
+        <li>
+            <!-- Logo image -->
+            <img src="../IMG/LK laundry.PNG" alt="Laundry Hub Logo" class="logo"> <!-- Company logo -->
+        </li>
+        
+        <li><h3><a href="index.html">Homepage</a></h3></li> <!-- Navigation link to homepage -->
+        <li><h3><a href="about.html">About Us</a></h3></li> <!-- Navigation link to about page -->
+        <li><h3><a href="service.html">Services</a></h3></li> <!-- Navigation link to services -->
+        <li><h3><a href="enquiry.html">Enquiry</a></h3></li> <!-- Navigation link to enquiry -->
+        <li><h3><a href="contact.html">Contact</a></h3></li> <!-- Navigation link to contact -->
+        <li style="float:right"><h3><a class="active" href="contact.html">Contact Us</a></h3></li> <!-- Right-aligned link -->
+    </ul>
+
+
+<html> <!-- Starts a new HTML tag (not valid within another HTML document) -->
+<head>
+
+       <h1>LK's Laundry hub About Us</h1> <!-- Heading placed inside the head tag -->
+  
+     <body> <!-- Another body tag (invalid) -->
+     
+       <!-- Image Row at the Top -->
+       <div class="image-row"> <!-- Container for a row of images -->
+         <img src="../IMG/South African emblem.jpg" alt="South African Emblem"> <!-- Emblem image -->
+         <img src="../IMG/LK laundry.PNG" alt="Laundry Hub Logo"> <!-- Logo image -->
+         <img src="../IMG/south-african-flag-1486137288VYk.jpg" alt="South African Flag"> <!-- Flag image -->
+       </div>
+
+</head> <!-- Head tag closed after body content -->
+  </body> <!-- Closing body tag -->
+
+<div class="flex-container"> <!-- Flex container for layout -->
+  <div> <!-- Inner content div -->
+
+<h1>About Us</h1> <!-- Section title -->
+         <h2> What we do for you?</h2> <!-- Subheading -->
+          <h3>The Laundry hub organisation announced its formation on 27 January, 2019 in Soweto. 
+            The Organistaion was established to help our South African working force with their laundry issue as many of these South Africans would attend work with dirty, smelly clothings leading to bad humidity in work spaces.
+            Some of these people live in poor conditions and can't afford a washing machine. 
+            This organization was formed by former Youth Enviroment inspector leader Likhaya Zweni.
+            The organisation describes itself Clothing and bad, disgusting hygiene exterminator movement for economic emancipation and pleasing hygiene in workplases and homes.
+        Even though our organisation was established in 2019 we have managed to overcome the covid/qauritine wave, hence growing further forward ever since 2020 
+            from 2021 to thus far that we have managed to reach over an average of 90 000 households across the whole country in which we are helping and serve 53 local community soccer,rugby,and cricket clubs and have over 92 live cites in the country </h3> <!-- Organization history and mission -->
+</head></div></div><br><br><br><br><br><br><br><br><br> <!-- Closing divs and multiple line breaks -->
+
+
+</div> <!-- Unmatched closing div -->
+       
+<!-- Flex Container for Service Description -->
+
+<!-- Floated Images with and without Clearfix(CSS)-->
+<div class="float-section"> <!-- Section with floating elements -->
+  
+  <h2>Our Vision</h2> <!-- Vision section heading -->
+  
+  <div class="clearfix"> <!-- Clearfix container for floated content -->
+    
+    :<h3>Laundry hub aims to help with curing unpleasant smells, dirty stains and uncomfortablility in terms of clothes, we aim to do this with determination and consistency associated with enviromental movement in 
+     South Africa meaning that we will help our South Africans in a healthy and eco-friendly manner. </h3> <br> <!-- Vision text -->
+   
+  </div>
+
+  <h2>Our Mission</h2> <!-- Mission section heading -->
+
+  <div class="clearfix"> <!-- Clearfix container -->
+    <h3>Our mission is to keep our standard of cleaning services to the best it can be as we also look to extended our services internationally across South Africa and beyond.
+     The best contribution we want to make on the communities is too make them feel comfortable in their own clothes increasing aura and relieving stress as this overloading chore is taking care of.</h3> 
+  </div>
+
+  <h2>Goals</h2> <!-- Goals section heading -->
+  
+  <div class="clearfix"> <!-- Clearfix container -->
+    
+    <h3><li>We hope to please our ommunities to the best of our abilities</li><br> <!-- Goal item 1 -->
+     <li>We hope to expand outside South Africa within 5 years </li><br> <!-- Goal item 2 -->
+     <li>We hope to create more than 80 000 jobs in the country</li><br> <!-- Goal item 3 -->
+     <li>To be leaglly supported by the Government of South Africa</li><br> <!-- Goal item 4 -->
+     <li>To gain the upmost trust of our communities</li><br></h3> <!-- Goal item 5 -->
+  </div>
+
+  <button class="button button2">Next Page</button> <!-- Button to proceed to next page -->
+
+  <footer> <!-- Footer section -->
+    <p>&copy[2019][LK's laundry hub][All rights reserved. Term of service privacy </p> <!-- Footer text (brackets are unclosed) -->
+  </footer>  
+  <script>
+    // Hover effect on image-row images
+    document.addEventListener("DOMContentLoaded", function () {
+      const images = document.querySelectorAll(".image-row img");
+      images.forEach(img => {
+        img.addEventListener("mouseover", () => {
+          img.style.border = "3px solid #00bcd4";
+          img.style.transform = "scale(1.05)";
+          img.style.transition = "all 0.3s";
+        });
+        img.addEventListener("mouseout", () => {
+          img.style.border = "none";
+          img.style.transform = "scale(1)";
+        });
+      });
+  
+      // Toggle Goals Section
+      const goalSection = document.querySelector('.clearfix h3');
+      if (goalSection) {
+        const toggleBtn = document.createElement('button');
+        toggleBtn.innerText = "Show/Hide Goals";
+        toggleBtn.style.marginTop = "10px";
+        toggleBtn.className = "button button2";
+  
+        const goalsDiv = goalSection.parentElement;
+        goalsDiv.insertBefore(toggleBtn, goalSection);
+        goalSection.style.display = "none";
+  
+        toggleBtn.addEventListener("click", () => {
+          goalSection.style.display = goalSection.style.display === "none" ? "block" : "none";
+        });
+      }
+  
+      // Next Page Button
+      const nextBtn = document.querySelector(".button.button2");
+      if (nextBtn) {
+        nextBtn.addEventListener("click", function (serviceshtml) {
+          alert("Redirecting to next page (e.g., services.html)");
+          // Uncomment below to actually redirect:
+          // window.location.href = "service.html";
+        });
+      }
+    });
+  </script>
+  
+</body> <!-- Final body tag -->
+</html> <!-- Final html tag -->
+
+
+

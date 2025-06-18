@@ -1,0 +1,273 @@
+ul {
+  list-style-type: none; /* Removes bullet points from list */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  border-radius: 15px 50px 30px 5px; /* Rounded corners for container */
+  overflow: hidden; /* Hides overflowed content */
+  background-color: #23b3a7; /* Teal background color */
+}
+
+li {
+  float: left; /* Floats list items to the left */
+}
+
+li a {
+  display: block; /* Makes the anchor tag behave like a block */
+  color: rgb(0, 0, 0); /* Black text color */
+  text-align: center; /* Center-aligns the text */
+  padding: 14px 16px; /* Padding around links */
+  text-decoration: none; /* Removes underline from links */
+}
+
+li a:hover:not(.active) {
+  background-color: #ffffff; /* White background on hover, except for active link */
+}
+
+.active {
+  background-color: #ffffff; /* White background for active link */
+}
+
+.flex-container {
+  display: flex; /* Enables flex layout */
+  height: 200px; /* Sets height */
+  align-items: flex-start; /* Aligns items to the start */
+  background-color: DodgerBlue; /* Sets background color */
+}
+
+.logo {
+  height: 70px; /* Logo image height */
+  padding: 35px; /* Padding around the logo */
+}
+
+.flex-container {
+  display: flex; /* Flex container */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  height: 200px; /* Height of the container */
+  background-color: #f5a40d; /* Orange background */
+}
+
+.flex-container > div {
+  background-color: #23b3a7; /* Teal background */
+  color: rgb(0, 0, 0); /* Black text */
+  width: 1100px; /* Width of flex item */
+  height: 100px; /* Height of flex item */
+  border-radius: 1px 7px; /* Slightly rounded corners */
+}
+
+#example1 {
+  background-image: url('../IMG/washingmachine\ gif.gif'), url('img_flwr.gif'); /* Two background images */
+  background-position: left top, right top; /* Positioning of images */
+  background-repeat: repeat, no-repeat; /* Repeat one image, don’t repeat the other */
+  background-size: auto, 150px 150px; /* Sizes for second image */
+  padding: 215px; /* Padding around the background */
+}
+
+body {
+  margin: 55px; /* Margin around the body */
+}
+
+.polaroid-row {
+  display: flex; /* Flexbox layout for row of polaroids */
+  gap: 100px; /* Gap between items */
+  flex-wrap: wrap; /* Allows items to wrap to next line */
+}
+
+div.polaroid {
+  width: 40%; /* Width of each polaroid */
+  background-color: #23b3a7; /* Teal background */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+              0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Drop shadows */
+  margin-bottom: 15px; /* Space below polaroid */
+}
+
+div.container {
+  text-align: center; /* Centers text */
+  padding: 10px 10px; /* Padding inside container */
+}
+
+.button {
+  background-color: #04AA6D; /* Green background */
+  border: none; /* No border */
+  color: white; /* White text */
+  padding: 15px 32px; /* Button padding */
+  text-align: center; /* Centers text */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Inline block element */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin around button */
+  cursor: pointer; /* Pointer cursor on hover */
+  -webkit-transition-duration: 0.4s; /* Smooth transition (Safari) */
+  transition-duration: 0.4s; /* Smooth transition */
+}
+
+.button1 {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 
+              0 6px 20px 0 rgba(0,0,0,0.19); /* Shadow for button1 */
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),
+              0 17px 50px 0 rgba(0,0,0,0.19); /* Shadow on hover for button2 */
+}
+
+li {
+  float: center; /* ❌ Invalid value: 'center' is not valid for float, should be left/right/none */
+}
+
+.flex-container2 {
+  display: flex; /* Flex layout */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  height: 300px; /* Height of container */
+  background-color: #f5a40d; /* Orange background */
+}
+
+.flex-container2 > div {
+  background-color: #000000; /* Black background */
+  color: rgb(12, 10, 10); /* Very dark gray text */
+  width: 100px; /* Width of box */
+  height: 200px; /* Height of box */
+}
+
+.flex-container {
+  display: flex; /* Flex layout */
+  justify-content: center;
+  align-items: center;
+  height: 350px; /* Taller than previous flex container */
+  background-color: #ffffff; /* White background */
+}
+
+.flex-container2 {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: rgb(255, 255, 255); /* White background again */
+}
+
+.flex-container2 > div {
+  background-color: #000000; /* Black background */
+  color: rgb(12, 10, 10);
+  width: 100px;
+  height: 100px; /* Height changed from earlier version */
+}
+
+.flex-container > div {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 1700px;
+  height: 70px;
+}
+
+h1 {
+  text-align: center; /* Centered heading */
+  text-decoration-style: solid; /* Default solid underline style */
+}
+
+img {
+  display: block; /* Block image for spacing */
+  margin: auto; /* Centers image horizontally */
+}
+
+.image-row {
+  display: flex; /* Row layout for images */
+  justify-content: center; /* Center all images */
+  gap: 20px; /* Space between images */
+}
+
+.image-row img {
+  width: 500px; /* Width of each image */
+  height: 300px; /* Height of each image */
+}
+
+.image-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: hsl(39, 92%, 51%); /* Bright orange background */
+}
+
+.image-row img {
+  height: 200px; /* Smaller height */
+  width: 200px; /* Smaller width */
+  object-fit: contain; /* Maintains aspect ratio without cropping */
+}
+
+.flex-container {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  background-color: rgb(255, 255, 255); /* White background */
+}
+
+/* Float image styles and clearfix */
+.float-section div {
+  border: 3px solid #4CAF50; /* Green border */
+  padding: 25px; /* Padding around floated section */
+  margin-top: 30px; /* Space above section */
+}
+
+.img1,
+.img2 {
+  float: left; /* Floats images to the left */
+  margin-left: 15px; /* Space on the left of images */
+}
+
+.clearfix::after {
+  content: ""; /* Clears float */
+  clear: both;
+  display: table;
+}
+
+input[type=text], select {
+  width: 100%; /* Full width */
+  padding: 12px 20px; /* Padding inside */
+  margin: 8px 0; /* Margin above and below */
+  display: inline-block;
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Includes padding and border in width */
+}
+
+input[type=submit] {
+  width: 100%; /* Full width */
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+input[type=submit]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+div {
+  border-radius: 5px; /* Rounded corners for all divs */
+  background-color: #f2f2f2; /* Light gray background */
+  padding: 20px; /* Padding inside divs */
+}
+
+
+ footer {
+  background-color: #f5a40d;
+  padding: 10px;
+  text-align: center;
+  color: white;
+              }
+@media(max-width:600px){}
+  main{ 
+    padding:20px;/*padding for main content on small screens*/
+    margin:0 10px;/*Margin on the sides for the main content*/
+}
+/*Responsive adjustments for screens with max width of 600px*/
+@media(max-width:600px){
+}
+  main{
+    padding:1rem,/*smaller padding for main content on small screens*/
+  }

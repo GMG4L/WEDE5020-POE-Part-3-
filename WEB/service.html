@@ -32,7 +32,7 @@
 <head>
 </head>
 <body>
-
+  </div>
   <!-- Image Row at the Top -->
   <div class="image-row"> <!-- Container for top row of images -->
     <img src="../IMG/South African emblem.jpg" alt="South African Emblem"> <!-- Emblem image -->
@@ -54,7 +54,101 @@
       </h3>
     </div>
   </div><br><br><br><br><br> <!-- Line breaks for spacing -->
-
+  <style>
+    div.gallery {
+      border: 1px solid #ccc;
+    }
+    
+    div.gallery:hover {
+      border: 1px solid #777;
+    }
+    
+    div.gallery img {
+      width: 100%;
+      height: auto;
+    }
+    
+    div.desc {
+      padding: 5px;
+      text-align: center;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    .responsive {
+      padding: 0 6px;
+      float: left;
+      width: 24.99999%;
+    }
+    
+    @media only screen and (max-width: 700px) {
+      .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+      }
+    }
+    
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
+      }
+    }
+    
+    .clearfix:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
+    </head>
+    <body>
+    
+    
+    <h2> Our Image displayer</h2>
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="../IMG/Washing machine.jpeg">
+          <img src="../IMG/Washing machine.jpeg" alt="LK laundry hub services" width="600" height="400">
+        </a>
+        <div class="desc">cleaning </div>
+      </div>
+    </div>
+    
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="../IMG/our services.jpg">
+          <img src="../IMG/our services.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Complete Laundry & Supply</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="../IMG/delivery guy.jpg">
+          <img src="../IMG/delivery guy.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Delivery</div>
+      </div>
+    </div>
+    
+    <div class="responsive">
+      <div class="gallery">
+        <a target="_blank" href="../IMG/Our Services 2.jpg">
+          <img src="../IMG/Our Services 2.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Inventory</div>
+      </div>
+    </div>
+    
+    <div class="clearfix"></div>
+    
+    <div style="padding:6px;">
+      <p style="font-size:20px;"> This displays any picture picked so that you, our viewer can see properly </p>  
+    </div>
   <h1>Our Services Include:</h1> <!-- Section heading for service list -->
 
   <!-- Floated Images with and without Clearfix -->
@@ -96,11 +190,9 @@
       <img class="img2" src="../IMG/laundry-saloon.jpg" alt="Pineapple" width="170" height="170"> <!-- Collection image -->
       <h3> A core part of LK's laundry service is to make sure pickup and 
         delivery of clothes is reliable, efficient, and secure for our customers. 
-        This is if they prefare to pickup the clothes by themselves instead of delivery. </h3> <!-- Description -->
-    </div>
-  </div>
-
-  <button class="button button2">Next Page</button> <!-- Button to go to next page -->
+        This is if they prefare to pickup the clothes by themselves instead of delivery. </h3> <br><br><br><br>  <!-- Description -->
+     <br><br><br><br>  
+  <br> <button class="button button2">Next Page</button> <!-- Button to go to next page -->
 
   <footer> <!-- Footer section -->
     <p>&copy[2026][LK's laundry hub][All rights reserved for term of service privacy </p> <!-- Footer text -->

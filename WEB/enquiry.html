@@ -1,154 +1,194 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Character encoding declaration -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile scaling -->
-    <title>Services</title> <!-- Title of the web page -->
-    <link rel="stylesheet" href="Style.css"> <!-- Link to external CSS stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Java.Js" defer></script> <!-- JavaScript file is linked properly -->
+    <style>
+        .nav-buttons {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .nav-buttons a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        .nav-buttons a:hover {
+            background-color: #0056b3;
+        }
+
+        form {
+            margin: 20px auto;
+            max-width: 500px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 
-<body> <!-- Beginning of the webpage body -->
-
-    <ul> <!-- Navigation bar with list items -->
-        <li>
-            <!-- Logo image for the website -->
-            <img src="../IMG/LK laundry.PNG" alt="Laundry Hub Logo" class="logo">
-        </li>
-        <!-- Navigation menu items -->
+<body>
+    <ul>
+        <li><img src="../IMG/LK laundry.PNG" alt="Laundry Hub Logo" class="logo"></li>
         <li><h3><a href="index.html">Homepage</a></h3></li>
         <li><h3><a href="about.html">About Us</a></h3></li>
         <li><h3><a href="service.html">Services</a></h3></li>
         <li><h3><a href="enquiry.html">Enquiry</a></h3></li>
         <li><h3><a href="contact.html">Contact</a></h3></li>
-        <li style="float:right"><h3><a class="active" href="contact.html">Contact Us</a></h3></li> <!-- Right-aligned contact button -->
+        <li style="float:right"><h3><a class="active" href="contact.html">Contact Us</a></h3></li>
     </ul>
 
-        <h1>LK's Laundry Enquiry Page</h1> <!-- Page title -->
+    <h1>LK's Laundry Enquiry Page</h1>
 
-    <!-- Image row at the top -->
-    <div class="image-row">
-        <img src="../IMG/South African emblem.jpg" alt="South African Emblem"> <!-- Image 1 -->
-        <img src="../IMG/LK laundry.PNG" alt="Laundry Hub Logo"> <!-- Image 2 -->
-        <img src="../IMG/south-african-flag-1486137288VYk.jpg" alt="South African Flag"> <!-- Image 3 -->
+    <div class="image-row" style="text-align: center;">
+        <img src="../IMG/South African emblem.jpg" alt="SA Emblem" width="100">
+        <img src="../IMG/LK laundry.PNG" alt="Logo" width="100">
+        <img src="../IMG/south-african-flag-1486137288VYk.jpg" alt="Flag" width="100">
     </div>
- 
 
-    <h1>To enquire our business, enter your details</h1><br> <!-- Enquiry form header -->
+    <h1>To enquire about our business, enter your details</h1>
+    <form id="enquiryForm">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" placeholder="Your name.." required>
 
-    <div> <!-- Container for form -->
-        <form action="/action_page.php"> <!-- Form submission URL -->
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" placeholder="Your last name.." required>
 
-            <!-- First name input field -->
-            <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Your email.." required>
 
-            <!-- Last name input field -->
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="enquiry">Type your enquiry here:</label>
+        <input type="text" id="enquiry" placeholder="Enquiry" required>
 
-            <!-- Email input field -->
-            <label for="lname">Your Email</label>
-            <input type="text" id="Email" name="Email" placeholder="Your Email..">
+        <input type="submit" value="Submit">
+    </form>
 
-            <!-- Enquiry message input field -->
-            <label>Type your enquiry here:</label>
-            <input type="text" placeholder="Enquiry"/><br/>
+    <h1>To become a member of staff</h1>
+    <form id="staffForm">
+        <label for="staffFname">First Name</label>
+        <input type="text" id="staffFname" placeholder="First Name" required>
 
-            <!-- Submit button for the enquiry form -->
-            <input type="submit" value="Submit">
-        </form>
+        <label for="staffLname">Last Name</label>
+        <input type="text" id="staffLname" placeholder="Last Name" required>
+
+        <label for="staffPhone">Your Number</label>
+        <input type="text" id="staffPhone" placeholder="Phone Number" required>
+
+        <label for="staffID">ID Number</label>
+        <input type="text" id="staffID" placeholder="Your ID Number" required>
+
+        <label for="country">Your Nationality</label>
+        <select id="country">
+            <option value="South Africa">South Africa</option>
+            <option value="Australia">Australia</option>
+            <option value="USA">USA</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1>Previous and Next Buttons</h1>
+    <div class="nav-buttons">
+        <a href="service.html" class="previous">&laquo; Previous</a>
+        <a href="contact.html" class="next">Next &raquo;</a>
     </div>
-    <div>
-    <form action="staffForm"> <!-- Form submission URL -->
-    <h1>To become a member of staff</h1> <!-- Staff sign-up form title -->
-    <!-- Staff form fields -->
-    <label>First name:</label>
-    <input type="text" required />  <!-- Required first name -->
-    <label>Last name:</label>
-    <input type="text" required /><br><br> <!-- Required last name -->
 
-    <label>Your Number:</label>
-    <input type="text" required /> <!-- Required contact number -->
-
-    <!-- ID input -->
-    <label for="lname">ID Number</label>
-    <input type="number" id="Enter lD Number" name="ID" placeholder="Your ID Number.."><br><br>
-
-    <!-- Nationality selection dropdown -->
-    <label for="country">Your nationality</label>
-    <select id="country" name="country">
-        <option value="South Africa">South Africa</option>
-        <option value="australia">Australia</option>
-        <option value="usa">USA</option>
-    </select>
-
-    <!-- Submit button for staff form -->
-    <input type="submit" value="submit"/><p> <!-- Submit and paragraph break -->
-    </div>
-        <script>
-            // Enquiry form submission
-            document.querySelector("form[action='/action_page.php']").addEventListener("submit", function(event) {
-                event.preventDefault(); // Prevent form submission
-        
+    <footer style="text-align: center;">
+        <p>&copy; 2026 LK's Laundry Hub | All rights reserved. Terms of service & Privacy</p>
+    </footer>
+    "THIS CODE DOESNT WORK WHEN I PUT IT ON MY JAVA PAGE"
+    <Script>document.addEventListener("DOMContentLoaded", function () {
+        function showThankYou(message, targetForm) {
+            const thankYouDiv = document.createElement("div");
+            thankYouDiv.textContent = message;
+            thankYouDiv.style.cssText = `
+                background-color: #d4edda;
+                color: #155724;
+                border: 1px solid #c3e6cb;
+                padding: 15px;
+                margin-top: 10px;
+                text-align: center;
+                border-radius: 5px;
+                font-weight: bold;
+            `;
+    
+            targetForm.parentNode.insertBefore(thankYouDiv, targetForm.nextSibling);
+    
+            setTimeout(() => {
+                thankYouDiv.remove();
+            }, 4000); // Hide after 4 seconds
+        }
+    
+        // Enquiry Form
+        const enquiryForm = document.querySelector("form#enquiryForm");
+        if (enquiryForm) {
+            enquiryForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+    
                 const fname = document.getElementById("fname").value.trim();
                 const lname = document.getElementById("lname").value.trim();
-                const email = document.getElementById("Email").value.trim();
-                const enquiry = document.querySelector("input[placeholder='Enquiry']").value.trim();
-        
+                const email = document.getElementById("email").value.trim();
+                const enquiry = document.getElementById("enquiry").value.trim();
+    
                 if (!fname || !lname || !email || !enquiry) {
-                    alert("Please fill in all the enquiry form fields.");
+                    showThankYou("⚠ Please fill in all the enquiry form fields.", enquiryForm);
                     return;
                 }
-        
-                // Basic email format check
+    
                 const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
                 if (!emailPattern.test(email)) {
-                    alert("Please enter a valid email address.");
+                    showThankYou("⚠ Invalid email address format.", enquiryForm);
                     return;
                 }
-        
-                alert("Thank you " + fname + "! Your enquiry has been received.");
-                this.reset(); // Clear form fields
+    
+                showThankYou(`✅ Thank you ${fname}, your enquiry has been received!`, enquiryForm);
+                enquiryForm.reset();
             });
-        
-            // Staff form submission
-            document.getElementById("staffForm").addEventListener("submit", function (event) {
-                event.preventDefault(); // Prevent form submission
-        
+        }
+    
+        // Staff Form
+        const staffForm = document.querySelector("form#staffForm");
+        if (staffForm) {
+            staffForm.addEventListener("submit", function (event) {
+                event.preventDefault();
+    
                 const fname = document.getElementById("staffFname").value.trim();
                 const lname = document.getElementById("staffLname").value.trim();
                 const phone = document.getElementById("staffPhone").value.trim();
                 const idNumber = document.getElementById("staffID").value.trim();
-        
+    
                 if (!fname || !lname || !phone || !idNumber) {
-                    alert("Please fill in all the staff application fields.");
+                    showThankYou("⚠ Please fill in all the staff application fields.", staffForm);
                     return;
                 }
-        
+    
                 if (idNumber.length < 10) {
-                    alert("Please enter a valid ID number.");
+                    showThankYou("⚠ ID number must be at least 10 characters.", staffForm);
                     return;
                 }
-        
-                alert("Thank you " + fname + "! Your application has been submitted.");
-                this.reset(); // Clear form fields
+    
+                showThankYou(`✅ Thank you ${fname}, your application has been submitted!`, staffForm);
+                staffForm.reset();
             });
-        </script>
-        
-        <body>
-          
-            <h2>Previous and Next Buttons</h2>
-            
-            <a href="service.html" class="previous">&laquo; Previous</a>
-            <a href="contact.html" class="next">Next &raquo;</a>
-            
-            </body>
-        <input type="submit" value="Join"> <!-- Button to go to the next page -->
-    </body> <!-- Closes extra body tag -->
-
-    <button class="button button2">Next Page</button> <!-- Button to go to the next page -->
-
-    <footer> <!-- Footer section -->
-        <p>&copy[2026][LK's laundry hub][All rights reserved. Term of service privacy </p> <!-- Footer text (missing closing punctuation) -->
-    </footer>
-
+        }
+    });
+    </Script>
+</body>
+</html>

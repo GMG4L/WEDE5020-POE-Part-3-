@@ -73,7 +73,7 @@
     <div class="responsive">
       <div class="gallery">
         <a target="_blank" href="../IMG/our services.jpg">
-          <img src="../IMG/our services.jpg" alt="Forest" width="600" height="400">
+          <img src="../IMG/our services.jpg" alt="LK laundry hub services" width="600" height="400">
         </a>
         <div class="desc">Complete Laundry & Supply</div>
       </div>
@@ -82,7 +82,7 @@
     <div class="responsive">
       <div class="gallery">
         <a target="_blank" href="../IMG/delivery guy.jpg">
-          <img src="../IMG/delivery guy.jpg" alt="Northern Lights" width="600" height="400">
+          <img src="../IMG/delivery guy.jpg" alt="LK laundry hub services" width="600" height="400">
         </a>
         <div class="desc">Delivery</div>
       </div>
@@ -91,7 +91,7 @@
     <div class="responsive">
       <div class="gallery">
         <a target="_blank" href="../IMG/Our Services 2.jpg">
-          <img src="../IMG/Our Services 2.jpg" alt="Mountains" width="600" height="400">
+          <img src="../IMG/Our Services 2.jpg" alt="LK laundry hub services" width="600" height="400">
         </a>
         <div class="desc">Inventory</div>
       </div>
@@ -109,7 +109,7 @@
     
     <h2>Cleaning</h2> <!-- Cleaning service -->
     <div class="clearfix"> <!-- Clearfix wrapper to contain floated elements -->
-      <img class="img2" src="../IMG/Washing machine.jpeg" alt="Pineapple" width="170" height="170"> <!-- Image for cleaning -->
+      <img class="img2" src="../IMG/Washing machine.jpeg" alt="LK laundry hub services" width="170" height="170"> <!-- Image for cleaning -->
       :<h3>Our laundry services focus on cleaning clothes through a combination of specialized processes, 
       equipment, and detergents designed to remove dirt, stains, odors, and bacteria, 
       making our South Africans feel good while wearing their clothes. </h3> <br> <!-- Description -->
@@ -117,14 +117,14 @@
 
     <h2>Inventory</h2> <!-- Inventory service -->
     <div class="clearfix">
-      <img class="img2" src="../IMG/Our Services 2.jpg" alt="Pineapple" width="170" height="170"> <!-- Image for inventory -->
+      <img class="img2" src="../IMG/Our Services 2.jpg" alt="LK laundry hub services" width="170" height="170"> <!-- Image for inventory -->
       <h3>Managing an inventory of clothes is a key part of our professional laundry services, 
     considering the fact that we offer pickup and delivery or handling bulk laundry as expected.</h3> <!-- Description -->
     </div>
 
     <h2>Complete Laundering & supply</h2> <!-- Complete service -->
     <div class="clearfix">
-      <img class="img2" src="../IMG/our services.jpg" alt="Pineapple" width="170" height="170"> <!-- Image for complete service -->
+      <img class="img2" src="../IMG/our services.jpg" alt="LK laundry hub services" width="170" height="170"> <!-- Image for complete service -->
       <h3>Our laundry services don't just focus on cleaning clothes 
       we also ensure the entire process is completed efficiently 
       where applicable, clothings like linens, uniforms, or bulk orders are delivered back to clients on time and in full.</h3> <!-- Description -->
@@ -132,7 +132,7 @@
 
     <h2>Delivery</h2> <!-- Delivery service -->
     <div class="clearfix">
-      <img class="img2" src="../IMG/delivery guy.jpg" alt="Pineapple" width="170" height="170"> <!-- Delivery image -->
+      <img class="img2" src="../IMG/delivery guy.jpg" alt="LK laundry hub services" width="170" height="170"> <!-- Delivery image -->
      <h3> As explained above clothings like linens, uniforms, or bulk orders are delivered back to clients on time and in full.
       As our delivery team are employees from the specific area we operate in. Which makes delivery fast and effiecient.
     The duration of clothes coming back to you, depend on the amount of clothes sent to us to be clean.</h3> <!-- Description -->
@@ -140,7 +140,7 @@
 
     <h2>Collection</h2> <!-- Collection service -->
     <div class="clearfix">
-      <img class="img2" src="../IMG/laundry-saloon.jpg" alt="Pineapple" width="170" height="170"> <!-- Collection image -->
+      <img class="img2" src="../IMG/laundry-saloon.jpg" alt="LK laundry hub services" width="170" height="170"> <!-- Collection image -->
       <h3> A core part of LK's laundry service is to make sure pickup and 
         delivery of clothes is reliable, efficient, and secure for our customers. 
         This is if they prefare to pickup the clothes by themselves instead of delivery. </h3> <br><br><br><br>  <!-- Description -->
@@ -156,50 +156,7 @@
   <footer> <!-- Footer section -->
     <p>&copy[2026][LK's laundry hub][All rights reserved for term of service privacy </p> <!-- Footer text -->
   </footer>
-  <script>
-  // Hover effect on image-row images
-    document.addEventListener("DOMContentLoaded", function () {
-      const images = document.querySelectorAll(".image-row img");
-      images.forEach(img => {
-        img.addEventListener("mouseover", () => {
-          img.style.border = "3px solid #00bcd4";
-          img.style.transform = "scale(1.05)";
-          img.style.transition = "all 0.3s";
-        });
-        img.addEventListener("mouseout", () => {
-          img.style.border = "none";
-          img.style.transform = "scale(1)";
-        });
-      });
   
-      // Toggle Goals Section
-      const goalSection = document.querySelector('.clearfix h3');
-      if (Goals) {
-        const toggleBtn = document.createElement('button');
-        toggleBtn.innerText = "Show/Hide Goals";
-        toggleBtn.style.marginTop = "10px";
-        toggleBtn.className = "button button2";
-  
-        const goalsDiv = goalSection.parentElement;
-        goalsDiv.insertBefore(toggleBtn, goalSection);
-        goalSection.style.display = "none";
-  
-        toggleBtn.addEventListener("click", () => {
-          goalSection.style.display = goalSection.style.display === "none" ? "block" : "none";
-        });
-      }
-  
-      // Next Page Button
-      const nextBtn = document.querySelector(".button.button2");
-      if (nextBtn) {
-        nextBtn.addEventListener("click", function (serviceshtml) {
-          alert("Redirecting to next page (e.g., services.html)");
-          // Uncomment below to actually redirect:
-          // window.location.href = "service.html";
-        });
-      }
-    });
-  </script>
 </body>
 </html>
 
